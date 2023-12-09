@@ -1,0 +1,47 @@
+body {
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+.p1_s1 .p1_s2 .p1_s3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.p1_s1 {
+    width: 16rem;
+}
+.p2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+
+}
+
+.p2 .mb-3 {
+    width: 15rem;
+}
