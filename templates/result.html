@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='logo/laptop.png') }}" type="image/x-icon">
+        <title>Estimated Price</title>
+    <style>
+        p{
+            font-size: x-large;
+            text-align: center;
+        }
+
+        body{
+            background-color: #f2f8e7;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:70vh;
+            width: 100vh;
+        }
+        .footer{
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 5rem;
+            gap:3rem;
+        }
+        a{
+            transition: transform 0.3s ease-in-out;
+        }
+        a:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body >
+    <div class="container">
+        <p>{{ result }}</p>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/AnishwarBehera/Laptop-Price-Prediction"target="_blank">
+            <img src="{{ url_for('static', filename='logo/github.png') }}" alt="GitHub Profile">
+          </a>
+          <a href="https://www.kaggle.com/code/anishwarbehera/laptop-price-prediction-xgbregressor-r2-score-89"target="_blank">
+            <img src="{{ url_for('static', filename='logo/Kaggle.png') }}" alt="Kaggle Profile">
+          </a>
+    </div>
+</body>
+
+</html>
